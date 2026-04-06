@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mini Bank</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Mini Bank</h1>
+
+<!-- LOGIN -->
+<div id="login">
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+
+    <button onclick="register()">Register</button>
+    <button onclick="loginUser()">Login</button>
+
+    <p id="msg"></p>
+</div>
+
+<!-- MENU -->
+<div id="menu" class="hidden">
+    <h2>Welcome <span id="user"></span></h2>
+
+    <button onclick="deposit()">Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+    <button onclick="getBalance()">Balance</button>
+    <button onclick="getHistory()">History</button>
+    <button onclick="logout()">Logout</button>
+
+    <div id="output"></div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
